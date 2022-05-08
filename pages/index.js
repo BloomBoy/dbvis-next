@@ -82,6 +82,7 @@ export async function getStaticProps() {
     slug: "index",
   });
   return {
+    // Alwasy Return The Requied Data Otherwise the JSON Payload will be huge 
     props: { data: data.items[0] }, // will be passed to the page component as props
   };
 }
