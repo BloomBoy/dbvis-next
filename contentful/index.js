@@ -10,7 +10,7 @@ export async function getPage(params) {
     limit: 1,
     include: 10,
     content_type: params.pageContentType,
-    "fields.subheader1": params.slug,
+    "fields.slug": params.slug,
   };
   const page = await client.getEntries(query);
 
