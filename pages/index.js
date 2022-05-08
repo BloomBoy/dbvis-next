@@ -40,8 +40,7 @@ export default function Home({ data }) {
           {data?.fields?.sections?.map((section) => (
             <a className="" key={section?.sys?.id}>
               <h2>{section.fields?.sectionName} &rarr;</h2>
-              <p>Find in-depth information about Next.js features and API.</p>
-            </a>
+                        </a>
           ))}
         </div>
       </main>
