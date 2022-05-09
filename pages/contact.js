@@ -12,7 +12,7 @@ import Footer from "components/Footer";
 // Styles
 import styles from "styles/Home.module.css";
 
-export default function Home({ seo, hero, title, slug, sections }) {
+export default function Contact({ seo, hero, title, slug, sections }) {
   return (
     <div className={styles.container}>
       <Seo
@@ -25,8 +25,8 @@ export default function Home({ seo, hero, title, slug, sections }) {
         <Header title={title} slug={slug} />
         <Hero data={hero} />
         <Sections data={sections} />
-        <Link href="/contact">
-          <a className={styles.card}>Contact Page</a>
+        <Link href="/">
+          <a className={styles.card}>Home Page</a>
         </Link>
       </main>
       <Footer />
@@ -37,7 +37,7 @@ export default function Home({ seo, hero, title, slug, sections }) {
 export async function getStaticProps() {
   const data = await getPage({
     pageContentType: "mainPage",
-    slug: "index",
+    slug: "contact",
   });
   const r = data.items[0];
   return {
