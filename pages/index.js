@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 // Contentful
 import { getPage } from "contentful/index.js";
 
