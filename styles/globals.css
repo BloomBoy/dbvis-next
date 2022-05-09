@@ -5,5 +5,13 @@
 @tailwind utilities;
 
 .btn--primary {
-    @apply bg-green-500 p-3 px-5 text-white font-bold;
+    @apply bg-green-500 p-3 px-6 text-white font-bold;
+}
+
+.btn--large {
+    @apply p-4 px-8 text-2xl;
+}
+
+body, html {
+    color: #28282d;
 }

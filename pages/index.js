@@ -15,10 +15,9 @@ export default function Home({ seo, hero, title, sections }) {
         noFollow={seo?.fields?.noFollow}
         noIndex={seo?.fields?.noIndex}
       />
-      <div className="text-center h-screen">
-        <h2 className="text-3xl">{title}</h2>
-        <Hero data={hero} />
-      </div>
+      
+      <Hero data={hero} />
+      
       <Sections data={sections} />
     </>
   );

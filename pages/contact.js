@@ -15,7 +15,6 @@ export default function Contact({ seo, title, hero, sections }) {
         noIndex={seo?.fields?.noIndex}
       />
       <div className="text-center h-screen">
-        <h2 className="text-3xl">{title}</h2>
         <Hero data={hero} />
       </div>
       <Sections data={sections} />
